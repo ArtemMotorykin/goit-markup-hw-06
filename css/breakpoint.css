@@ -28,6 +28,7 @@
 
 
 
+
 .footer-container {
     display: flex;
     flex-direction: column;
@@ -86,6 +87,24 @@
 }
 
 
+
+
+.sect-five-menu {
+    gap: 72px 24px;
+}
+
+.sect-five-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    justify-content: center;
+}
+
+.sect-five-item {
+    width: calc((100% - 48px) / 3);
+}
 
 
 .footer-div {
@@ -185,16 +204,25 @@
     padding-top: 120px;
     padding-bottom: 120px;
 }
-/* 
-.sect-four-list {
-    gap: 24px;
-} */
 
 .sect-four-item {
     width: calc((100% - 72px) / 4);
 }
 
 
+
+.sect-five {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.sect-five-menu {
+    gap: 24px;
+}
+
+.sect-five-item {
+    width: calc((100% - 120px) / 6);
+}
 
 
 
