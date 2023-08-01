@@ -26,6 +26,8 @@ ul {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 body {
@@ -35,8 +37,8 @@ body {
 }
 
 .container {
-    max-width: 1158px;
-    padding: 0 15px;
+    /* max-width: 1158px;
+    padding: 0 15px; */
     margin: 0 auto;
 }
 
@@ -78,11 +80,6 @@ button {
 
 .logo-ligh {
     color: var(--grey);
-    display: inline-block;
-}
-
-.logo-ligh-two {
-    color: var(--cloud) ;
     display: inline-block;
 }
 
@@ -224,36 +221,23 @@ margin: 0 auto;
 /*------------------------------- SECTION 2 --------------------------------------------------------*/
 
 .section-two {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
     }
 
 .section-two-menu {
     display: flex;
-    gap: 24px;
+    gap: 72px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .section-two-menu-item {
-    width: calc((100% - 72px) / 4);
-}
-
-.section-two-menu-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 264px;
-    height: 112px;
-    flex-shrink: 0;
-    border-radius: 4px;
-    background: var(--cloud);
-    margin-bottom: 8px;
+    width: 100%;
 }
 
 .sect-heads-three {
     color: var(--navy-blue);
-    font-size: 20px;
-    font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
@@ -261,7 +245,6 @@ margin: 0 auto;
 
 .section-text {
     color: var(--slate);
-    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
@@ -310,7 +293,10 @@ margin: 0 auto;
     width: calc((100% - 48px) / 3);
 }
 
+/*------------------------------- SECTION 4 --------------------------------------------------------*/
+
 .img-bg {
+    margin: 0 auto;
     background: var(--cornflower);
     border-radius: 0px 0px 4px 4px;
 }
@@ -319,24 +305,23 @@ margin: 0 auto;
     padding: 32px 0px;
 }
 
-/*------------------------------- SECTION 4 --------------------------------------------------------*/
-
 .sect-four {
     background-color: var(--cloud);
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .sect-four-list {
     display: flex;
-    gap: 24px;
+    gap: 72px;
+    flex-wrap: wrap;
 }
 
 
 .sect-four-item {
-    width: calc((100% - 72px) / 4);
+    width: 100%;
     border-radius: 0px 0px 4px 4px;
-    background: var(--white);
+    background-color: var(--white);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
@@ -452,58 +437,19 @@ margin: 0 auto;
 
 .footer {
     background: var(--navy-blue);
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 97.5px;
+    padding-bottom: 96px;
 }
 
 .footer-div {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    gap: 72px;
 }
 
-.footer-container {
+/* .footer-container {
     margin-right: 120px;
-}
-
-
-.sect-four-item {
-    background-color: var(--white);
-}
-
-.footer-text {
-    color: var(--cloud);
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    max-width: 264px;
-
-}
-
-.digital-two {
-    font-weight: 500;
-    font-family: inherit;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: var(--iris);
-    background-color: var(--cloud);
-    padding: 12px 24px;
-    border-radius: 4px;
-    display: inline-block;
-    border: 1px solid var(--cornflower);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.digital-two:hover,
-.digital-two:focus {
-    background-color: var(--ocean);
-    color: var(--white);
-    border: 1px solid transparent;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
-}
+} */
 
 .footer-logo-upper {
     margin-bottom: 17.5px;
@@ -516,11 +462,28 @@ margin: 0 auto;
     letter-spacing: 0.03em;
     display: inline-block;
     margin-bottom: 16px;
+    text-decoration: none;
 }
 
+.logo-ligh-two {
+    color: var(--cloud);
+    display: inline-block;
+}
+
+.footer-text {
+    color: var(--cloud);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    max-width: 264px;
+
+}
+
+
+/* 
 .footer-social {
     flex-grow: 1;
-}
+} */
 
 .footer-social-text {
     color: var(--white);
@@ -533,6 +496,7 @@ margin: 0 auto;
 
 .footer-social-menu {
     display: flex;
+    justify-content: center;
     gap: 16px;
     margin: 0;
 }
@@ -563,7 +527,6 @@ margin: 0 auto;
 }
 
 .footer-subscribe {
-    margin-left: 80px;
     flex-grow: 1;
 }
 
@@ -576,10 +539,10 @@ margin: 0 auto;
     margin-bottom: 16px;
 }
 
-.footer-form {
+/* .footer-form {
     display: flex;
     gap: 24px;
-}
+} */
 
 .footer-input {
     width: 264px;
@@ -593,7 +556,6 @@ margin: 0 auto;
     border: 1px solid var(--white);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     color: var(--white);
-
 }
 
 .footer-input::placeholder {
@@ -707,6 +669,32 @@ margin: 0 auto;
     column-gap: 24px;
     row-gap: 48px;
 }
+
+.digital-two {
+    font-weight: 500;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--iris);
+    background-color: var(--cloud);
+    padding: 12px 24px;
+    border-radius: 4px;
+    display: inline-block;
+    border: 1px solid var(--cornflower);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.digital-two:hover,
+.digital-two:focus {
+    background-color: var(--ocean);
+    color: var(--white);
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+
 
 /*------------------------------- BACKDROP --------------------------------------------------------*/
 
@@ -927,3 +915,4 @@ margin: 0 auto;
     visibility: hidden;
     pointer-events: none;
 }
+
