@@ -50,16 +50,6 @@
     text-align: center;
 }
 
-.footer-input {
-    width: 100%;
-    margin-bottom: 16px;
-}
-
-.footer-form-btn {
-    margin: 0 auto;
-    min-width: 165px;
-}
-
 }
 
 /*------------------------------- BREAKPOINT 768 PX --------------------------------------------------------*/
@@ -100,7 +90,6 @@
 
 .footer-div {
     width: 582px;
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 72px 24px;
@@ -110,16 +99,9 @@
     align-items: flex-start;
 }
 
-.footer-text {
-    margin-bottom: 72px;
-}
 
 .footer-social {
     align-items: flex-start;
-}
-
-.footer-social-menu {
-    margin-bottom: 0px;
 }
 
 .footer-subscribe {
@@ -132,7 +114,6 @@
 }
 
 .footer-form {
-    display: flex;
     flex-direction: row;
 }
 
@@ -224,7 +205,6 @@
 
 .footer-div {
     width: 100%;
-    display: flex;
     flex-wrap: nowrap;
     gap: 0;
 }
@@ -235,12 +215,6 @@
 
 .footer-text {
     max-width: 264px;
-    margin-bottom: 0px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #F4F4FD;
 }
 
 .footer-social {

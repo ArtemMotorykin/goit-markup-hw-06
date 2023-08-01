@@ -467,7 +467,6 @@ margin: 0 auto;
 
 .logo-ligh-two {
     color: var(--cloud);
-    display: inline-block;
 }
 
 .footer-text {
@@ -475,15 +474,8 @@ margin: 0 auto;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    max-width: 264px;
-
+    max-width: 268px;
 }
-
-
-/* 
-.footer-social {
-    flex-grow: 1;
-} */
 
 .footer-social-text {
     color: var(--white);
@@ -526,10 +518,6 @@ margin: 0 auto;
     background-color: var(--green);
 }
 
-.footer-subscribe {
-    flex-grow: 1;
-}
-
 .footer-subscribe-text {
     color: var(--white);
     font-size: 16px;
@@ -539,13 +527,8 @@ margin: 0 auto;
     margin-bottom: 16px;
 }
 
-/* .footer-form {
-    display: flex;
-    gap: 24px;
-} */
-
 .footer-input {
-    width: 264px;
+    width: 398px;
     height: 40px;
     background-color: transparent;
     font-size: 12px;
@@ -556,6 +539,7 @@ margin: 0 auto;
     border: 1px solid var(--white);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     color: var(--white);
+    margin-bottom: 16px;
 }
 
 .footer-input::placeholder {
@@ -563,6 +547,7 @@ margin: 0 auto;
 }
 
 .footer-form-btn {
+    margin: 0 auto;
     min-width: 165px;
     height: 40px;
     display: flex;
@@ -590,6 +575,9 @@ margin: 0 auto;
     fill: var(--white);
 }
 
+/*------------------------------- PORTFOLIO --------------------------------------------------------*/
+
+
 .top-btn {
     padding-top: 96px;
     padding-bottom: 120px;
@@ -600,10 +588,6 @@ margin: 0 auto;
     gap: 24px;
     justify-content: center;
     margin-bottom: 72px;
-}
-
-.top-btn-menu-item {
-    
 }
 
 .our-services {
@@ -696,7 +680,7 @@ margin: 0 auto;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 
 
-/*------------------------------- BACKDROP --------------------------------------------------------*/
+/*------------------------------- MODAL --------------------------------------------------------*/
 
 .backdrop {
     position: fixed;
