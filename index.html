@@ -21,8 +21,6 @@
     <title>WebStudio</title>
   </head>
   <body>
-    <!-------------------- HEADER ------------------------------->
-
     <header class="headers">
       <div class="container header-container">
         <nav class="header-nav">
@@ -48,8 +46,6 @@
           </ul>
         </nav>
 
-        <!-------------------- ADDRESS ------------------------------->
-
         <address class="address">
           <ul class="address-menu list">
             <li class="address-menu-item">
@@ -64,21 +60,28 @@
             </li>
           </ul>
         </address>
-        <button type="button" class="mobail-menu-open-btn">
+        <button
+          type="button"
+          class="mobail-menu-open-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg class="headers-icons" width="32" height="22">
             <use href="./images/icons.svg#icons-charm_menu-hamburger"></use>
           </svg>
         </button>
       </div>
-      <div class="mobile-menu">
-        <button type="button" class="mobail-menu-close-btn">
+
+      <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <button type="button" class="mobail-menu-close-btn js-close-menu">
           <svg class="modal-img" width="8" height="8">
             <use href="./images/icons.svg#icons-close-black"></use>
           </svg>
         </button>
+
         <ul class="mobile-menu-list list">
           <li class="mobile-menu-item">
-            <a class="mobile-menu-link-active link current" href="./index.html"
+            <a class="mobile-menu-link-active link" href="./index.html"
               >Studio</a
             >
           </li>
@@ -91,40 +94,42 @@
             <a class="mobile-menu-link link" href="">Contacts</a>
           </li>
         </ul>
-        <ul class="mobile-menu list">
-          <li class="mobile-menu-item">
-            <a class="mobile-menu-link link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="mobile-menu-item">
-            <a class="mobile-menu-link link" href="tel:+110001111111"
+        <ul class="mobile-menu-address-menu list">
+          <li class="mobile-menu-address-item">
+            <a class="mobile-menu-tel-link link" href="tel:+110001111111"
               >+11 (000) 111-11-11</a
             >
           </li>
+          <li class="mobile-menu-address-item">
+            <a
+              class="mobile-menu-email-link link"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
         </ul>
-        <ul class="footer-social-menu list">
-          <li class="footer-social-item">
-            <a class="footer-social-link" href="" target="_blank">
-              <svg class="footer-social-img" width="24" height="24">
+        <ul class="mobile-menu-messenger-menu list">
+          <li class="mobile-menu-messenger-item">
+            <a class="mobile-menu-messenger-link" href="" target="_blank">
+              <svg class="mobile-menu-messenger-img" width="24" height="24">
                 <use href="./images/icons.svg#icons-instagram"></use></svg
             ></a>
           </li>
-          <li class="footer-social-item">
-            <a class="footer-social-link" href="" target="_blank">
-              <svg class="footer-social-img" width="24" height="24">
+          <li class="mobile-menu-messenger-item">
+            <a class="mobile-menu-messenger-link" href="" target="_blank">
+              <svg class="mobile-menu-messenger-img" width="24" height="24">
                 <use href="./images/icons.svg#icons-twitter"></use></svg
             ></a>
           </li>
-          <li class="footer-social-item">
-            <a class="footer-social-link" href="" target="_blank">
-              <svg class="footer-social-img" width="24" height="24">
+          <li class="mobile-menu-messenger-item">
+            <a class="mobile-menu-messenger-link" href="" target="_blank">
+              <svg class="mobile-menu-messenger-img" width="24" height="24">
                 <use href="./images/icons.svg#icons-facebook"></use></svg
             ></a>
           </li>
-          <li class="footer-social-item">
-            <a class="footer-social-link" href="" target="_blank">
-              <svg class="footer-social-img" width="24" height="24">
+          <li class="mobile-menu-messenger-item">
+            <a class="mobile-menu-messenger-link" href="" target="_blank">
+              <svg class="mobile-menu-messenger-img" width="24" height="24">
                 <use href="./images/icons.svg#icons-linkedin"></use></svg
             ></a>
           </li>
@@ -133,8 +138,6 @@
     </header>
 
     <main>
-      <!-------------------- SECTION 1 ------------------------------->
-
       <section class="hero-image list">
         <div class="container hero-image-container">
           <h1 class="hero-image-title">
@@ -146,12 +149,8 @@
         </div>
       </section>
 
-      <!-------------------- SECTION 2 ------------------------------->
-
       <section class="section-two">
         <div class="container">
-          <!---------------- FEATURE 1 ------------------------------>
-
           <h2 class="visually-hidden">Section 2</h2>
           <ul class="section-two-menu list">
             <li class="section-two-menu-item">
@@ -167,8 +166,6 @@
               </p>
             </li>
 
-            <!---------------- FEATURE 2 ------------------------------>
-
             <li class="section-two-menu-item">
               <div class="section-two-menu-icons">
                 <svg class="section-two-icons" width="64" height="64">
@@ -182,8 +179,6 @@
               </p>
             </li>
 
-            <!---------------- FEATURE 3 ------------------------------>
-
             <li class="section-two-menu-item">
               <div class="section-two-menu-icons">
                 <svg class="section-two-icons" width="64" height="64">
@@ -196,8 +191,6 @@
                 growth opportunities and minimize risk.
               </p>
             </li>
-
-            <!---------------- FEATURE 4 ------------------------------>
 
             <li class="section-two-menu-item">
               <div class="section-two-menu-icons">
@@ -214,8 +207,6 @@
           </ul>
         </div>
       </section>
-
-      <!-------------------- SECTION 3 ------------------------------->
 
       <section class="section-three">
         <div class="container">
@@ -251,8 +242,6 @@
           </ul>
         </div>
       </section>
-
-      <!-------------------- SECTION 4 ------------------------------->
 
       <section class="sect-four list">
         <div class="container">
@@ -444,8 +433,6 @@
         </div>
       </section>
 
-      <!-------------------- SECTION 5 ------------------------------->
-
       <section class="sect-five list">
         <div class="container">
           <h2 class="sect-heads-two">Customers</h2>
@@ -496,8 +483,6 @@
         </div>
       </section>
     </main>
-
-    <!-------------------- FOOTER ------------------------------->
 
     <footer class="footer">
       <div class="footer-div container">
@@ -563,9 +548,7 @@
       </div>
     </footer>
 
-    <!-------------------- MODAL ------------------------------->
-
-    <!-- <div class="modal-head is-hidden" data-modal>
+    <div class="modal-head is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-img" width="8" height="8">
@@ -650,7 +633,14 @@
           <button type="submit" class="modal-send-btn">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
