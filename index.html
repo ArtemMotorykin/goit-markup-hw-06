@@ -23,9 +23,9 @@
   <body>
     <!-------------------- HEADER ------------------------------->
 
-    <!-- <header class="headers">
-      <div class="container header-container"> -->
-    <!-- <nav class="header-nav">
+    <header class="headers">
+      <div class="container header-container">
+        <nav class="header-nav">
           <a class="header-logo-upper link" href="./index.html"
             >Web<span class="logo-ligh">Studio</span>
           </a>
@@ -46,11 +46,11 @@
               <a class="header-menu-link link" href="">Contacts</a>
             </li>
           </ul>
-        </nav> -->
+        </nav>
 
-    <!-------------------- ADDRESS ------------------------------->
+        <!-------------------- ADDRESS ------------------------------->
 
-    <!-- <address class="address">
+        <address class="address">
           <ul class="address-menu list">
             <li class="address-menu-item">
               <a class="address-menu-link link" href="mailto:info@devstudio.com"
@@ -64,8 +64,73 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="mobail-menu-open-btn">
+          <svg class="headers-icons" width="32" height="22">
+            <use href="./images/icons.svg#icons-charm_menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mobile-menu">
+        <button type="button" class="mobail-menu-close-btn">
+          <svg class="modal-img" width="8" height="8">
+            <use href="./images/icons.svg#icons-close-black"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu-list list">
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link-active link current" href="./index.html"
+              >Studio</a
+            >
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link link" href="./portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link link" href="">Contacts</a>
+          </li>
+        </ul>
+        <ul class="mobile-menu list">
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+        <ul class="footer-social-menu list">
+          <li class="footer-social-item">
+            <a class="footer-social-link" href="" target="_blank">
+              <svg class="footer-social-img" width="24" height="24">
+                <use href="./images/icons.svg#icons-instagram"></use></svg
+            ></a>
+          </li>
+          <li class="footer-social-item">
+            <a class="footer-social-link" href="" target="_blank">
+              <svg class="footer-social-img" width="24" height="24">
+                <use href="./images/icons.svg#icons-twitter"></use></svg
+            ></a>
+          </li>
+          <li class="footer-social-item">
+            <a class="footer-social-link" href="" target="_blank">
+              <svg class="footer-social-img" width="24" height="24">
+                <use href="./images/icons.svg#icons-facebook"></use></svg
+            ></a>
+          </li>
+          <li class="footer-social-item">
+            <a class="footer-social-link" href="" target="_blank">
+              <svg class="footer-social-img" width="24" height="24">
+                <use href="./images/icons.svg#icons-linkedin"></use></svg
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </header>
 
     <main>
       <!-------------------- SECTION 1 ------------------------------->
@@ -158,6 +223,7 @@
           <ul class="section-three-list list">
             <li class="section-three-item">
               <img
+                srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x"
                 src="./images/img1.jpg"
                 alt="Monitor"
                 width="360"
@@ -166,6 +232,7 @@
             </li>
             <li class="section-three-item">
               <img
+                srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x"
                 src="./images/img2.jpg"
                 alt="Phone"
                 width="360"
@@ -174,6 +241,7 @@
             </li>
             <li class="section-three-item">
               <img
+                srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x"
                 src="./images/img3.jpg"
                 alt="Phone and laptop"
                 width="360"
@@ -192,6 +260,10 @@
           <ul class="sect-four-list list">
             <li class="sect-four-item">
               <img
+                srcset="
+                  ./images/mark_guerrero.jpg    1x,
+                  ./images/mark_guerrero-2x.jpg 2x
+                "
                 src="./images/mark_guerrero.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -234,6 +306,7 @@
             </li>
             <li class="sect-four-item">
               <img
+                srcset="./images/tom_ford.jpg 1x, ./images/tom_ford-2x.jpg 2x"
                 src="./images/tom_ford.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -276,6 +349,10 @@
             </li>
             <li class="sect-four-item">
               <img
+                srcset="
+                  ./images/camila_garcia.jpg    1x,
+                  ./images/camila_garcia-2x.jpg 2x
+                "
                 src="./images/camila_garcia.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -319,6 +396,10 @@
             </li>
             <li class="sect-four-item">
               <img
+                srcset="
+                  ./images/daniel_wilson.jpg    1x,
+                  ./images/daniel_wilson-2x.jpg 2x
+                "
                 src="./images/daniel_wilson.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -484,7 +565,7 @@
 
     <!-------------------- MODAL ------------------------------->
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="modal-head is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-img" width="8" height="8">
