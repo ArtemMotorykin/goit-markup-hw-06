@@ -68,7 +68,6 @@ button {
     color: var(--ocean);
     line-height: 1.17;
     letter-spacing: 0.03em;
-    margin-right: 249px;
     padding-top: 25.5px;
     padding-bottom: 25.5px;
     display: inline-block;
@@ -80,11 +79,13 @@ button {
 
 .header-container {
     display: flex;
+    justify-content: space-between;
 }
 
 .header-nav {
     display: flex;
     align-items: center;
+    flex-grow: 1;
 }
 
 .header-menu {
@@ -309,6 +310,10 @@ button {
     width: 100%;
 }
 
+.section-two-menu-icons {
+    display: none;
+}
+
 .sect-heads-three {
     color: var(--navy-blue);
     line-height: 1.2;
@@ -358,6 +363,7 @@ button {
     margin: 0 auto;
     background: var(--cornflower);
     border-radius: 0px 0px 4px 4px;
+    max-width: 100%;
 }
 
 .workers{
@@ -368,16 +374,18 @@ button {
     background-color: var(--cloud);
     padding-top: 96px;
     padding-bottom: 96px;
+    display: block;
 }
 
 .sect-four-list {
     display: flex;
-    gap: 72px;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
 }
 
 .sect-four-item {
-    width: 100%;
     border-radius: 0px 0px 4px 4px;
     background-color: var(--white);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);

@@ -2,6 +2,8 @@
 
 @media screen and (min-width: 428px) {
 .container {
+    max-width: 100%;
+    min-width: 320px;
     max-width: 428px;
     padding-left: 16px;
     padding-right: 16px;
@@ -9,9 +11,6 @@
     margin-right: auto;
 }
 
-.section-two-menu-icons {
-    display: none;
-}
 
 .sect-heads-three {
     font-size: 36px;
@@ -66,7 +65,7 @@
 }
 
 .header-nav {
-    margin-right: 120px;
+    /* margin-right: 120px; */
 }
 
 .header-logo-upper {
