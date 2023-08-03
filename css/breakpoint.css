@@ -1,58 +1,18 @@
-/*------------------------------- BREAKPOINT 428 PX --------------------------------------------------------*/
+@media screen and (max-width: 427px) {
+    .footer-input {
+    max-width: 92vw;
+    }
+
+    .modal {
+    max-width: 92%;
+    }
+}
 
 @media screen and (min-width: 428px) {
-/* .container {
-    max-width: 100%;
-    min-width: 320px;
+.container {
     max-width: 428px;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-left: auto;
-    margin-right: auto;
-} */
-
-
-.sect-heads-three {
-    font-size: 36px;
-    font-weight: 700;
-    text-align: center;
 }
 
-.section-text {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.11;
-}
-
-.section-three {
-    display: none;
-}
-
-.footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 0;
-}
-
-.footer-social {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footer-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-form-label {
-    margin-bottom: 16px;
-}
-
-.footer-subscribe-text {
-    text-align: center;
-}
 }
 
 /*------------------------------- BREAKPOINT 768 PX --------------------------------------------------------*/
