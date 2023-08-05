@@ -190,7 +190,7 @@ button {
 
 .mobile-menu-tel-link {
     color: var(--iris);
-    font-size: 30px;                    
+    font-size: 25px;                    
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -207,7 +207,7 @@ button {
 
 .mobile-menu-messenger-menu {
     display: flex;
-    gap: 56px;
+    gap: 30px;
     margin: 0;
 }
 
