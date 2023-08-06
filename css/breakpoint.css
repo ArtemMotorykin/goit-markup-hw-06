@@ -30,8 +30,8 @@
     max-width: 768px;
 }
 
-.sect-four > .container,
-.sect-five >.container,
+.section-four > .container,
+.section-five >.container,
 .footer >.container {
     max-width: 582px;
 }
@@ -116,7 +116,7 @@
     display: none;
 }
 
-.hero-image {
+.section-one {
 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 url(../images/people-office-tabel.jpg);
 }
@@ -124,12 +124,12 @@ url(../images/people-office-tabel.jpg);
 @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .hero-image {
+    .section-one {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tabel-2x.jpg);
 }
 }
 
-.hero-image-title {
+.section-one-title {
     font-size: 56px;
     line-height: 1.07;
     max-width: 496px;
@@ -150,19 +150,19 @@ url(../images/people-office-tabel.jpg);
     text-align: start;
 }
 
-.sect-four-list {
+.section-four-list {
     gap: 64px 24px;
 }
 
-.sect-four-item {
+.section-four-item {
     width: calc((100% - 24px) / 2);
 }
 
-.sect-five-menu {
+.section-five-menu {
     gap: 72px 24px;
 }
 
-.sect-five-menu {
+.section-five-menu {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -171,7 +171,7 @@ url(../images/people-office-tabel.jpg);
     justify-content: center;
 }
 
-.sect-five-item {
+.section-five-item {
     width: calc((100% - 48px) / 3);
 }
 
@@ -226,15 +226,15 @@ url(../images/people-office-tabel.jpg);
 
 @media screen and (min-width: 1158px) {
 .container, 
-.sect-four>.container,
-.sect-five>.container,
+.section-four>.container,
+.section-five>.container,
 .footer>.container {
     max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
 }
 
-.hero-image {
+.section-one {
     padding-top: 188px;
     padding-bottom: 188px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -244,7 +244,7 @@ url(../images/people-office-tabel.jpg);
 @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .hero-image {
+    .section-one {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-2x.jpg);
     }
 }
@@ -263,7 +263,7 @@ url(../images/people-office-tabel.jpg);
     gap: 40px;
 }
 
-.hero-image-title {
+.section-one-title {
     margin-bottom: 48px;
     gap: 40px;
 }
@@ -315,25 +315,25 @@ url(../images/people-office-tabel.jpg);
     width: calc((100% - 48px) / 3);
 }
 
-.sect-four {
+.section-four {
     padding-top: 120px;
     padding-bottom: 120px;
 }
 
-.sect-four-item {
+.section-four-item {
     width: calc((100% - 72px) / 4);
 }
 
-.sect-five {
+.section-five {
     padding-top: 120px;
     padding-bottom: 120px;
 }
 
-.sect-five-menu {
+.section-five-menu {
     gap: 24px;
 }
 
-.sect-five-item {
+.section-five-item {
     width: calc((100% - 120px) / 6);
 }
 
