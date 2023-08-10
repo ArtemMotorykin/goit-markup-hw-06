@@ -88,7 +88,6 @@ button {
 .header-nav {
     display: flex;
     align-items: center;
-    flex-grow: 1;
 }
 
 .header-menu {
@@ -463,8 +462,6 @@ button {
 
 .section-five-menu {
     display: flex;
-    flex-direction: row;
-    align-items: center;
     flex-wrap: wrap;
     gap: 72px 16px;
     margin: 0;
@@ -564,7 +561,6 @@ button {
 
 .footer-social-menu {
     display: flex;
-    justify-content: center;
     gap: 16px;
     margin: 0;
 }
